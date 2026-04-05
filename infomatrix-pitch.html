@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infomatrix Pitch | logo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #07131c;
+      --bg-soft: #0c1d29;
+      --card: #0f2331;
+      --line: #1e3a4b;
+      --text: #e7f1f6;
+      --muted: #9ab1bf;
+      --teal: #14b8a6;
+      --orange: #f59e0b;
+      --teal-soft: #0b6b68;
+      --orange-soft: #9a6810;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Manrope", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(20, 184, 166, 0.18), transparent 34%),
+        radial-gradient(circle at 88% 12%, rgba(245, 158, 11, 0.14), transparent 32%),
+        var(--bg);
+    }
+
+    .deck {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 22px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .slide {
+      border: 1px solid var(--line);
+      background: linear-gradient(165deg, rgba(15, 35, 49, 0.92), rgba(8, 18, 27, 0.96));
+      border-radius: 22px;
+      padding: 28px;
+      min-height: 70vh;
+      display: grid;
+      gap: 16px;
+      align-content: start;
+      box-shadow: 0 18px 60px rgba(2, 8, 15, 0.35);
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    h1, h2 { margin: 0; line-height: 1.15; }
+    h1 { font-size: clamp(34px, 6vw, 56px); max-width: 900px; }
+    h2 { font-size: clamp(26px, 4vw, 38px); }
+    p { margin: 0; color: var(--muted); max-width: 880px; }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: rgba(6, 19, 28, 0.54);
+      border-radius: 16px;
+      padding: 14px;
+    }
+
+    .card strong { color: #f0fbff; }
+
+    .kpi {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .kpi article {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(4, 13, 19, 0.6);
+      padding: 12px;
+    }
+
+    .kpi h3 {
+      margin: 0;
+      font: 700 26px/1 "JetBrains Mono", monospace;
+      color: var(--teal);
+    }
+
+    .pill {
+      display: inline-block;
+      border-radius: 999px;
+      border: 1px solid var(--teal-soft);
+      color: #adf5ef;
+      background: rgba(20, 184, 166, 0.12);
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    .orange {
+      border-color: var(--orange-soft);
+      color: #ffe3ad;
+      background: rgba(245, 158, 11, 0.12);
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 8px;
+      align-items: center;
+    }
+
+    .flow .node {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+      font-size: 13px;
+      background: rgba(11, 29, 41, 0.7);
+    }
+
+    .flow .arrow { text-align: center; color: var(--teal); font-weight: 800; }
+
+    .final {
+      display: grid;
+      gap: 12px;
+      align-content: center;
+      justify-items: start;
+    }
+
+    .cta {
+      display: inline-flex;
+      border: 1px solid var(--orange-soft);
+      background: linear-gradient(130deg, rgba(245, 158, 11, 0.2), rgba(20, 184, 166, 0.12));
+      padding: 10px 14px;
+      border-radius: 999px;
+      color: #fff2d1;
+      font-weight: 800;
+    }
+
+    @media (max-width: 900px) {
+      .grid-2, .kpi { grid-template-columns: 1fr; }
+      .flow { grid-template-columns: 1fr; }
+      .flow .arrow { display: none; }
+      .slide { min-height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <section class="slide">
+      <span class="eyebrow">Infomatrix Hackathon Pitch</span>
+      <h1>logo</h1>
+      <h2>Åäèíàÿ ïëàòôîðìà ñîðåâíîâàíèé Êàçàõñòàíà</h2>
+      <p>Îò ïîèñêà îëèìïèàä äî óïðàâëåíèÿ òóðíèðîì è AI-ïîääåðæêè â îäíîì ïðîäóêòå.</p>
+      <div>
+        <span class="pill">Web Platform</span>
+        <span class="pill">AI Assistant</span>
+        <span class="pill orange">Startup-ready MVP</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="eyebrow">Ïðîáëåìà</span>
+      <h2>Òåêóùèé ðûíîê ñîðåâíîâàíèé ôðàãìåíòèðîâàí</h2>
+      <div class="grid-2">
+        <article class="card"><strong>Ñëîæíî íàéòè ñîðåâíîâàíèÿ</strong><p>Èíôîðìàöèÿ ðàçáðîñàíà ïî ñàéòàì, ÷àòàì è ñîöñåòÿì.</p></article>
+        <article class="card"><strong>Ðàçðîçíåííàÿ ðåãèñòðàöèÿ</strong><p>Ó êàæäîãî òóðíèðà ñâîé ïðîöåññ áåç åäèíîãî ñòàíäàðòà.</p></article>
+        <article class="card"><strong>Ñëîæíîñòè ó îðãàíèçàòîðîâ</strong><p>Ìíîãî ðó÷íîé ðàáîòû: ó÷åò, ïàðû, êîììóíèêàöèÿ, êîíòðîëü.</p></article>
+        <article class="card"><strong>Íåò ñêâîçíîé àíàëèòèêè</strong><p>Ó÷àñòíèêè è êîìàíäû íå âèäÿò îáùóþ êàðòèíó ðîñòà.</p></article>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="eyebrow">Ðåøåíèå</span>
+      <h2>Îäíà ïëàòôîðìà: ïîèñê, ðåãèñòðàöèÿ, óïðàâëåíèå, AI</h2>
+      <p>logo îáúåäèíÿåò ó÷àñòíèêà, ñóäüþ, îðãàíèçàòîðà è çðèòåëÿ â åäèíîì öèôðîâîì êîíòóðå.</p>
+      <div class="kpi">
+        <article><h3>1</h3><p>åäèíûé êàòàëîã</p></article>
+        <article><h3>1</h3><p>ëè÷íûé ïðîôèëü</p></article>
+        <article><h3>4</h3><p>ðîëè â ñèñòåìå</p></article>
+        <article><h3>AI</h3><p>ïåðñîíàëüíûé ñëîé</p></article>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="eyebrow">Íàø ïîäõîä</span>
+      <h2>Ñíèæàåì áàðüåðû ó÷àñòèÿ è óñêîðÿåì îðãàíèçàöèþ</h2>
+      <p>Ìû óïðîùàåì ó÷àñòèå â ñîðåâíîâàíèÿõ, îáúåäèíÿÿ ðåãèñòðàöèþ, èíôîðìàöèþ è óïðàâëåíèå òóðíèðàìè â îäíîé èíòåëëåêòóàëüíîé ïëàòôîðìå. Ó÷àñòíèêè ëåãêî íàõîäÿò ïîäõîäÿùèå êîíêóðñû, à îðãàíèçàòîðû áûñòðî ïðîâîäÿò ìåðîïðèÿòèÿ.</p>
+      <div class="flow">
+        <div class="node">Поиск и фильтры</div>
+        <div class="arrow">></div>
+        <div class="node">AI подбор</div>
+        <div class="arrow">></div>
+        <div class="node">Регистрация и участие</div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="eyebrow">Ôóíêöèè</span>
+      <h2>Core-ôóíêöèîíàë ïëàòôîðìû</h2>
+      <div class="grid-2">
+        <article class="card"><strong>AI подбор è îöåíêà øàíñîâ</strong><p>Ðåêîìåíäàöèè òóðíèðîâ è ïðîãíîç ïî ó÷àñòíèêàì.</p></article>
+        <article class="card"><strong>Ðåãèñòðàöèÿ è èíôîðìàöèÿ</strong><p>Êàðòî÷êè, ôèëüòðû, áûñòðûé âõîä â ñîðåâíîâàíèå.</p></article>
+        <article class="card"><strong>Ñåòêè, î÷êè, óâåäîìëåíèÿ</strong><p>Çàïóñê òóðíèðíîãî ýòàïà, ïîäñ÷åò ðåçóëüòàòîâ, îïîâåùåíèÿ.</p></article>
+        <article class="card"><strong>Live òðàíñëÿöèè</strong><p>Òåêóùèå ýôèðû è àðõèâ ìàò÷åé â îäíîì ðàçäåëå.</p></article>
+        <article class="card"><strong>Ïàíåëü îðãàíèçàòîðà</strong><p>QR-âåðèôèêàöèÿ, êîíòðîëü ïðîöåññà, çàïóñê òóðíèðà.</p></article>
+        <article class="card"><strong>Ïàíåëü ñóäüè</strong><p>Îöåíèâàíèå âûñòóïëåíèé è ôèêñàöèÿ ðåçóëüòàòîâ.</p></article>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="eyebrow">Îñíîâíûå ôóíêöèè ïëàòôîðìû</span>
+      <h2>×òî óæå äîñòóïíî â MVP</h2>
+      <div>
+        <span class="pill">Ðåãèñòðàöèÿ íà ñîðåâíîâàíèÿ</span>
+        <span class="pill">AI ðåêîìåíäàöèè</span>
+        <span class="pill">Live ìàò÷è</span>
+        <span class="pill">Çàë ñëàâû äîñòèæåíèé</span>
+        <span class="pill orange">Marketplace óñëóã îðãàíèçàòîðîâ</span>
+      </div>
+      <div class="card">
+        <p>MVP ïîêðûâàåò êëþ÷åâîé ïîëüçîâàòåëüñêèé ñöåíàðèé: íàéòè êîíêóðñ > çàðåãèñòðèðîâàòüñÿ > ó÷àñòâîâàòü > ïîëó÷èòü îöåíêó è àíàëèòèêó.</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="eyebrow">Òóðíèðíûé ìîäóëü</span>
+      <h2>Îò çàïóñêà äî ðåçóëüòàòà â îäíîì ýêðàíå</h2>
+      <div class="grid-2">
+        <article class="card"><strong>Æåðåáüåâêà</strong><p>Àâòîìàòè÷åñêîå ôîðìèðîâàíèå ïàð.</p></article>
+        <article class="card"><strong>Ñåòêà òóðíèðà</strong><p>Âèçóàëüíûé ñïèñîê ìàò÷åé ñòàðòîâîãî ðàóíäà.</p></article>
+        <article class="card"><strong>Ïîäñ÷åò î÷êîâ</strong><p>Ñóäåéñêèå îöåíêè ñðàçó îòðàæàþòñÿ â ñèñòåìå.</p></article>
+        <article class="card"><strong>Óâåäîìëåíèÿ</strong><p>Ó÷àñòíèêè è îðãàíèçàòîð ïîëó÷àþò ñîáûòèÿ ïî òóðíèðó.</p></article>
+      </div>
+      <div class="cta">Êíîïêà «Ïðîâåñòè òóðíèð» çàïóñêàåò ðàóíä è ðàññûëêó óâåäîìëåíèé</div>
+    </section>
+
+    <section class="slide">
+      <span class="eyebrow">Öåííîñòü</span>
+      <h2>Ïîëüçà äëÿ ó÷àñòíèêîâ è îðãàíèçàòîðîâ</h2>
+      <div class="grid-2">
+        <article class="card">
+          <strong>Ó÷àñòíèêè</strong>
+          <p>Áûñòðûé ïîèñê, ïðîçðà÷íûå óñëîâèÿ, AI-ñîâåòû, èñòîðèÿ äîñòèæåíèé, live-äîñòóï.</p>
+        </article>
+        <article class="card">
+          <strong>Îðãàíèçàòîðû</strong>
+          <p>Óïðàâëåíèå òóðíèðîì, çàïóñê ñåòêè, ñåðâèñíûé ìàðêåòïëåéñ, êîíòðîëü âåðèôèêàöèè è êîììóíèêàöèé.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="eyebrow">Ìîíåòèçàöèÿ è ðàçâèòèå</span>
+      <h2>Óñòîé÷èâàÿ áèçíåñ-ìîäåëü</h2>
+      <div class="grid-2">
+        <article class="card"><strong>Ïëàòíûå ôóíêöèè îðãàíèçàòîðàì</strong><p>Ðàñøèðåííàÿ àíàëèòèêà, ìàññîâûå ðàññûëêè, áðåíäèðîâàíèå òóðíèðà.</p></article>
+        <article class="card"><strong>Ïàðòíåðñòâà</strong><p>Èíòåãðàöèè ñ îáðàçîâàòåëüíûìè öåíòðàìè è ôåäåðàöèÿìè.</p></article>
+        <article class="card"><strong>Ðåêëàìà</strong><p>Òàðãåòèðîâàííûå ðàçìåùåíèÿ äëÿ áðåíäîâ â òåìàòè÷åñêèõ êàòåãîðèÿõ.</p></article>
+        <article class="card"><strong>Premium AI</strong><p>Ïðîãíîçû, ïåðñîíàëüíàÿ òðàåêòîðèÿ ïîäãîòîâêè, AI-àññèñòåíò äëÿ êîìàíä.</p></article>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="eyebrow">Roadmap / MVP</span>
+      <h2>Ñòàòóñ è ñëåäóþùèé ýòàï</h2>
+      <div class="grid-2">
+        <article class="card"><strong>Óæå ðåàëèçîâàíî</strong><p>Ðîëè ïîëüçîâàòåëåé, êàòàëîã, ðåãèñòðàöèÿ, AI-èíñòðóìåíòû, live, ïàíåëü ñóäüè, ïàíåëü îðãàíèçàòîðà, òóðíèðíûé çàïóñê.</p></article>
+        <article class="card"><strong>Ñëåäóþùèé ñïðèíò</strong><p>Ïîëíîöåííàÿ bracket-âèçóàëèçàöèÿ, push-óâåäîìëåíèÿ, ìîáèëüíàÿ àäàïòàöèÿ äëÿ ìàññîâîãî çàïóñêà.</p></article>
+      </div>
+    </section>
+
+    <section class="slide final">
+      <span class="eyebrow">Final Slide</span>
+      <h2>logo äåëàåò ðûíîê ñîðåâíîâàíèé Êàçàõñòàíà åäèíûì è ìàñøòàáèðóåìûì</h2>
+      <p>Ìû ñòðîèì öèôðîâóþ èíôðàñòðóêòóðó, ãäå ó÷àñòíèêè áûñòðåå ðàñòóò, à îðãàíèçàòîðû ïðîâîäÿò òóðíèðû ñ ìåíüøèìè èçäåðæêàìè è áîëåå âûñîêèì êà÷åñòâîì.</p>
+      <div class="cta">Ãîòîâû ê ïèëîòó è ïàðòíåðñòâó ñ ðåãèîíàìè, øêîëàìè, âóçàìè è ôåäåðàöèÿìè</div>
+    </section>
+  </main>
+</body>
+</html>
+

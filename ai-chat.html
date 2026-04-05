@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chat | QazaqCompetition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+  <div class="site-shell">
+    <header class="header">
+      <a href="index.html" class="logo">Qazaq<span>Competition</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="aboutUs.html">About</a>
+        <a href="competitions.html">Competitions</a>
+        <a href="hall-of-fame.html">Hall of Fame</a>
+        <a href="live.html">Live</a>
+        <a href="news.html">News</a>
+        <a href="bonuses.html">Bonuses</a>
+        <a href="profile.html">Profile</a>
+        <a class="active" href="ai-chat.html">AI Chat</a>
+        <a href="judge-panel.html">Judge Panel</a>
+        <a href="organizer-panel.html">Organizer Panel</a>
+      </nav>
+      <div class="header-right"><div id="auth-controls"></div></div>
+    </header>
+
+    <main>
+      <section class="page-intro">
+        <div>
+          <span class="eyebrow">AI Chat</span>
+          <h1>AI помощник для учеников и администратора</h1>
+          <p>Ученики отправляют вопросы, а администратор генерирует единый общий ответ для всех.</p>
+        </div>
+        <div class="page-intro-media">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80" alt="AI chat" />
+        </div>
+      </section>
+
+      <section class="panel ai-chat-panel">
+        <div id="ai-live-block">
+          <h2>Живой AI-чат</h2>
+          <p class="muted">Подключи внешний AI: Ollama (локально) или OpenRouter (API). Тогда ответы будут как у настоящего AI.</p>
+
+          <div class="ai-config-grid">
+            <select id="ai-provider" class="input">
+              <option value="auto">Auto (сначала Ollama)</option>
+              <option value="ollama">Ollama (локально)</option>
+              <option value="openrouter">OpenRouter</option>
+              <option value="fallback">Только встроенный режим</option>
+            </select>
+            <input id="ai-model" class="input" type="text" placeholder="Модель (пример: llama3.1:8b-instruct / openai/gpt-4o-mini)" />
+            <input id="ai-api-key" class="input" type="password" placeholder="API key (только для OpenRouter)" />
+            <button id="ai-config-save" class="button tiny ghost" type="button">Сохранить AI-настройки</button>
+          </div>
+
+          <div id="ai-live-messages" class="ai-chat-messages">
+            <article class="chat-msg assistant"><p>Привет! Опиши задачу, и я помогу как AI-ассистент.</p></article>
+          </div>
+
+          <form id="ai-live-form" class="ai-chat-form">
+            <input class="input" type="text" name="message" placeholder="Например: помоги подготовиться к олимпиаде по информатике" required />
+            <button class="button" type="submit">Спросить AI</button>
+            <button id="ai-voice-btn" class="button tiny ghost" type="button">🎙 Голос в текст</button>
+          </form>
+          <div id="ai-live-note" class="inline-note"></div>
+        </div>
+
+        <div id="ai-student-block">
+          <h2>Вопросы от ученика</h2>
+          <form id="ai-student-form" class="ai-chat-form">
+            <input class="input" type="text" name="message" placeholder="Напишите вопрос администратору..." required />
+            <button class="button" type="submit">Отправить вопрос</button>
+          </form>
+          <div id="ai-student-questions" class="ai-chat-messages"></div>
+          <h3>Последний общий ответ от AI</h3>
+          <div id="ai-latest-summary" class="inline-note"></div>
+        </div>
+
+        <div id="ai-admin-block" hidden>
+          <h2>Панель администратора: вопросы учеников</h2>
+          <div id="ai-admin-questions" class="ai-chat-messages"></div>
+          <button id="ai-admin-generate" class="button" type="button">Сгенерировать единый AI-ответ</button>
+          <div id="ai-admin-summary" class="inline-note"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 QazaqCompetition. Next generation competitions platform.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
